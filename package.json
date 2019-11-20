@@ -1,0 +1,23 @@
+{
+  "name": "catbox.moe",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenasatupitsyn/node-catbox.git"
+  },
+  "author": {
+    "name": "Tenasa Tupitsyn",
+    "url": "http://tenasa.gq"
+  },
+  "dependencies": {
+    "form-data": "^3.0.0"
+  },
+  "keywords": [
+    "catbox",
+    "catbox.moe"
+  ],
+  "bugs": "https://github.com/tenasatupitsyn/node-catbox/issues",
+  "homepage": "https://github.com/tenasatupitsyn/node-catbox#readme",
+  "license": "MIT"
+}
