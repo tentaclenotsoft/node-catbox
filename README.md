@@ -1,4 +1,6 @@
-# CATBOX
+<p align="center">
+    <img src="https://files.catbox.moe/imhw87.png">
+</p>
 
 ### Constructor(userHash)
 
