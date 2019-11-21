@@ -15,8 +15,12 @@
 
 ## Installation
 
-```
-npm install catbox.moe
+```js
+$ npm install catbox.moe
+
+// OR
+
+$ yarn add catbox.moe
 ```
 
 ## Documentation
@@ -26,9 +30,19 @@ npm install catbox.moe
 - `userHash` - A string containing hash of the user to which the operations will be made, if undefined the operations will be done as anonymous
 
 ### upload(urlOrPath)
+Upload a file via url or path to it
 
-- `urlOrPath` - A string containing url or path to the file
+- `urlOrPath` - A url or path to the file
 
 ### delete(files)
+Delete one or more files
 
 - `files` - An array with the name of the files to be deleted from the account
+
+### createAlbum(options)
+Create a new album for your account or anonymously
+
+- `options`
+	- `title` - Name for the album
+	- `description` - Album description
+	- `files` - Name of files to add to your album
