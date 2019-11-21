@@ -30,7 +30,7 @@ $ yarn add catbox.moe
 - `userHash` - A string containing hash of the user to which the operations will be made, if undefined the operations will be done as anonymous
 
 ### upload(urlOrPath)
-Upload a file via url or path to it
+Upload files
 
 - `urlOrPath` - A url or path to the file
 
