@@ -1,8 +1,8 @@
 <p align="center">
     <img src="https://files.catbox.moe/imhw87.png"><br>
-    <b>Lightweight and simple module to <a href="https://catbox.moe/" target="_blank">catbox.moe</a> api management.</b>
+    <b>Lightweight and simple module to <a href="https://catbox.moe/">catbox.moe</a> api management</b>
     <br><br>
-    <a href="https://npmjs.com/package/catbox.moe"><img alt="npm" src="https://img.shields.io/npm/v/catbox.moe?style=flat-square"  alt="Version"></a>
+    <a href="https://npmjs.com/package/catbox.moe"><img src="https://img.shields.io/npm/v/catbox.moe?style=flat-square" alt="NPM Version"></a>
     <img src="https://img.shields.io/bundlephobia/min/catbox.moe?style=flat-square" alt="NPM Bundle Size">
     <img src="https://img.shields.io/david/tenasatupitsyn/node-catbox?style=flat-square" alt="Dependencies">
     <a href="https://github.com/tenasatupitsyn/node-catbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/tenasatupitsyn/node-catbox?style=flat-square" alt="License"></a>
@@ -46,3 +46,8 @@ Create a new album for your account or anonymously
 	- `title` - Name for the album
 	- `description` - Album description
 	- `files` - Name of files to add to your album
+
+### deleteAlbum(short)
+Delete album
+
+- `short` - Short code of album to be deleted
