@@ -47,6 +47,14 @@ Create a new album for your account or anonymously
 	- `description` - Album description
 	- `files` - Name of files to add to your album
 
+### editAlbum(options)
+Edit album info
+
+- `options`
+    - `short` - Short code of album to be edited
+    - `title` - New album title
+    - `description` - New album description
+
 ### deleteAlbum(short)
 Delete album
 
