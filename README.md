@@ -62,6 +62,13 @@ Add files to an album
     - `short` - Album short code where files will be added
     - `files` - An array with the name of the files to add to the album
 
+### removeFilesAlbum(options)
+Remove one or more files from an album
+
+- `options`
+    - `short` - Album code from where files will be removed
+    - `files` - An array with the name of the files to be removed from the album
+
 ### deleteAlbum(short)
 Delete album
 
