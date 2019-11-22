@@ -55,6 +55,13 @@ Edit album info
     - `title` - New album title
     - `description` - New album description
 
+### addFilesAlbum(options)
+Add files to an album
+
+- `options`
+    - `short` - Album short code where files will be added
+    - `files` - An array with the name of the files to add to the album
+
 ### deleteAlbum(short)
 Delete album
 
