@@ -6,20 +6,17 @@
     <img src="https://img.shields.io/bundlephobia/min/catbox.moe?style=flat-square" alt="NPM Bundle Size">
     <img src="https://img.shields.io/david/tenasatupitsyn/node-catbox?style=flat-square" alt="Dependencies">
     <a href="https://github.com/tenasatupitsyn/node-catbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/tenasatupitsyn/node-catbox?style=flat-square" alt="License"></a>
+    <br>
+    Using this tool, you agree to the Catbox Terms of Service/Privacy Policy available <a href="https://catbox.moe/legal.php">here</a>
 </p>
-
-## Contents
-
-- [Installation](#installation)
-- [Documentation](#documentation)
 
 ## Installation
 
-```js
+```bash
+# with npm
 $ npm install catbox.moe
 
-// OR
-
+# or with Yarn 
 $ yarn add catbox.moe
 ```
 
@@ -32,7 +29,7 @@ $ yarn add catbox.moe
 ### upload(urlOrPath)
 Upload files
 
-- `urlOrPath` - A url or path to the file
+- `urlOrPath` - A url or path to the file to upload
 
 ### delete(files)
 Delete one or more files
@@ -42,30 +39,32 @@ Delete one or more files
 ### createAlbum(options)
 Create a new album for your account or anonymously
 
-- `options`
-	- `title` - Name for the album
-	- `description` - Album description
-	- `files` - Name of files to add to your album
+- `options` - An object containing one or more of the following properties
+    - `title` - Name for the album
+    - `description` - An optional description for the album
+    - `files` - Name of files to add to your album if you wish to add
 
 ### editAlbum(options)
 Edit album info
 
-- `options`
+- `options` - An object containing the following properties
     - `short` - Short code of album to be edited
     - `title` - New album title
     - `description` - New album description
 
+This method is very sensitive, so use it wisely.
+
 ### addFilesAlbum(options)
 Add files to an album
 
-- `options`
+- `options` - An object containing the following properties
     - `short` - Album short code where files will be added
     - `files` - An array with the name of the files to add to the album
 
 ### removeFilesAlbum(options)
 Remove one or more files from an album
 
-- `options`
+- `options` - An object containing the following properties
     - `short` - Album code from where files will be removed
     - `files` - An array with the name of the files to be removed from the album
 
