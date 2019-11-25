@@ -36,6 +36,11 @@ Delete one or more files
 
 - `files` - An array with the name or url of the files to be deleted from the account
 
+### getAlbum(short)
+Get album information
+
+- `short` - Short code or url album to retrieve information
+
 ### createAlbum(options)
 Create a new album for your account or anonymously
 
@@ -51,9 +56,7 @@ Edit album info
     - `short` - Short code or url of album to be edited
     - `title` - New album title
     - `description` - New album description
-    - `files` - Name or url of files to add or keep to your album, if you do not add the files in the array they will be removed from the album
-
-This method is very sensitive, so use it wisely.
+    - `files` - Name or url of files to add to your album
 
 ### addFilesAlbum(options)
 Add files to an album

@@ -1,7 +1,7 @@
 const { parse } = require('url');
 
 module.exports = class Validators {
-	static FilesValidator(files) {
+	static FilesValidator(...files) {
 		return Array.prototype.concat.apply([], files)
 			.filter((file) => !file.includes(' '))
 			.map((file) => parse(file).slashes ? parse(file).path.slice(1) : file);
