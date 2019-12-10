@@ -1,1 +1,1 @@
-module.exports = require('./lib/CatBox.js');
+module.exports = require('./lib/CatBox.js')

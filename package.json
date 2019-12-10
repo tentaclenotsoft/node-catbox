@@ -1,6 +1,6 @@
 {
   "name": "catbox.moe",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Lightweight and simple module to catbox.moe api management",
   "main": "index.js",
   "repository": {
@@ -16,7 +16,10 @@
   },
   "keywords": [
     "catbox",
-    "catbox.moe"
+    "catbox.moe",
+    "upload",
+    "delete",
+    "album"
   ],
   "bugs": "https://github.com/tenasatupitsyn/node-catbox/issues",
   "homepage": "https://github.com/tenasatupitsyn/node-catbox#readme",
