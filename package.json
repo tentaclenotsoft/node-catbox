@@ -1,12 +1,9 @@
 {
-  "name": "@tenasatupitsyn/catbox.moe",
+  "name": "catbox.moe",
   "version": "0.1.0",
   "description": "Lightweight and simple module to catbox.moe api management",
   "main": "index.js",
   "repository": "git://github.com/tenasatupitsyn/node-catbox.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "author": {
     "name": "Tenasa Tupitsyn",
     "url": "http://tenasa.gq"
