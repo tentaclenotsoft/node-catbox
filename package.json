@@ -1,6 +1,6 @@
 {
   "name": "catbox.moe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight and simple module to catbox.moe api management",
   "main": "index.js",
   "repository": "git://github.com/tenasatupitsyn/node-catbox.git",
