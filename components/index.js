@@ -1,3 +1,3 @@
 module.exports = {
-	Validators: require('./Validators')
+	Resolver: require('./Resolver')
 }
