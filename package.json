@@ -1,18 +1,11 @@
 {
   "name": "catbox.moe",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Lightweight and simple module to catbox.moe api management",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:tenasatupitsyn/node-catbox.git"
-  },
-  "author": {
-    "name": "Tenasa Tupitsyn",
-    "email": "tenasasenpai@gmail.com"
-  },
-  "dependencies": {
-    "form-data": "^3.0.0"
   },
   "keywords": [
     "catbox",
@@ -21,7 +14,16 @@
     "delete",
     "album"
   ],
+  "author": {
+    "name": "Tenasa Tupitsyn",
+    "email": "tenasasenpai@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenasatupitsyn/node-catbox/issues"
+  },
   "homepage": "https://github.com/tenasatupitsyn/node-catbox#readme",
-  "bugs": "https://github.com/tenasatupitsyn/node-catbox/issues",
-  "license": "MIT"
+  "dependencies": {
+    "form-data": "^3.0.0"
+  }
 }
