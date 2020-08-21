@@ -37,7 +37,7 @@ Upload files
 
 - `urlOrPath` - A url or path to the file to upload
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The uploaded file url
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The uploaded file url
 
 #### delete(files)
 Delete one or more files
@@ -61,7 +61,7 @@ Create a new album for your account or anonymously
     - `description` - Description for the album
     - `files` - Name or url of files to add to your album if you wish to add
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the created album
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the created album
 
 #### editAlbum(options)
 Edit album info
@@ -72,7 +72,7 @@ Edit album info
     - `description` - New album description
     - `files` - Name or url of files to add to your album
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the edited album
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the edited album
 
 #### addFilesAlbum(options)
 Add files to an album
@@ -81,7 +81,7 @@ Add files to an album
     - `short` - Album short code or url where files will be added
     - `files` - An array with the name or url of the files to add to the album
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album that was added to the files
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album that was added to the files
 
 #### removeFilesAlbum(options)
 Remove one or more files from an album
@@ -90,7 +90,7 @@ Remove one or more files from an album
     - `short` - Album code or url from where files will be removed
     - `files` - An array with the name or url of the files to be removed from the album
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album from which the files were removed
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album from which the files were removed
 
 #### deleteAlbum(short)
 Delete album
