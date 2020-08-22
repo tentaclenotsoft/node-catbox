@@ -10,6 +10,11 @@
     Using this tool, you agree to the Catbox Terms of Service/Privacy Policy available <a href="https://catbox.moe/legal.php">here</a>
 </p>
 
+- [Installation](#installation)
+- [Documentation](#documentation)
+  - [Catbox](#catboxuserhash)
+  - [Litterbox](#litterbox)
+
 ## Installation
 
 ```bash
@@ -25,33 +30,41 @@ $ yarn add catbox.moe
 ### Catbox([userHash])
 
 ```js
-new Catbox(userHash)
+new Catbox.Catbox(userHash)
 ```
 
 - `userHash` - A string containing hash of the user to which the operations will be made, if undefined the operations will be done as anonymous
 
 ### Methods
 
+- [upload](#uploadurlorpath)
+- [delete](#deletefiles)
+- [getAlbum](#getalbumshort)
+- [createAlbum](#createalbumoptions)
+- [editAlbum](#editalbumoptions)
+- [addFilesAlbum](#addfilesalbumoptions)
+- [removeFilesAlbum](#removefilesalbumoptions)
+
 #### upload(urlOrPath)
 Upload files
 
-- `urlOrPath` - A url or path to the file to upload
+- `urlOrPath` - A URL or path to the file
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The uploaded file url
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### delete(files)
 Delete one or more files
 
-- `files` - An array with the name or url of the files to be deleted from the account
+- `files` - An array with the URL or short code of the files
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[void]()>
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### getAlbum(short)
 Get album information
 
-- `short` - Short code or url album to retrieve information
+- `short` - Album short URL or code
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)> — Requested album info
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)>
 
 #### createAlbum(options)
 Create a new album for your account or anonymously
@@ -59,42 +72,60 @@ Create a new album for your account or anonymously
 - `options` - An object containing one or more of the following properties
     - `title` - Name for the album
     - `description` - Description for the album
-    - `files` - Name or url of files to add to your album if you wish to add
+    - `files` - Short code or files URL to add to album
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the created album
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### editAlbum(options)
 Edit album info
 
 - `options` - An object containing the following properties
-    - `short` - Short code or url of album to be edited
-    - `title` - New album title
-    - `description` - New album description
-    - `files` - Name or url of files to add to your album
+    - `short` - Album short code or URL
+    - `title` - New name for the album
+    - `description` - New description for the album
+    - `files` - Short code or files URL to add to album
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the edited album
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### addFilesAlbum(options)
 Add files to an album
 
 - `options` - An object containing the following properties
-    - `short` - Album short code or url where files will be added
-    - `files` - An array with the name or url of the files to add to the album
+    - `short` - Album short code or URL
+    - `files` - An array with the short code or URL of files
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album that was added to the files
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### removeFilesAlbum(options)
-Remove one or more files from an album
+Remove files from an album
 
 - `options` - An object containing the following properties
-    - `short` - Album code or url from where files will be removed
-    - `files` - An array with the name or url of the files to be removed from the album
+    - `short` - Album short code or URL
+    - `files` - An array with the short code or URL of files
 
->**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> — The URL of the album from which the files were removed
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 #### deleteAlbum(short)
 Delete album
 
-- `short` - Short code or url of album to be deleted
+- `short` - Short code or album URL
 
 >**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[void]()>
+
+### Litterbox()
+
+```js
+new Catbox.Litterbox()
+```
+
+### Methods
+
+- [upload](#uploadpath-time)
+
+#### upload(path[, time])
+Upload file that will be available temporarily
+
+- `path` - Relative path of the file to be uploaded
+- `time` - Duration in hours for file expiration, default is **1h**. *(Allowed values are `1h`, `12h`, `24h`, and `72h`)*
+
+>**Returns**: &nbsp;&nbsp; [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
